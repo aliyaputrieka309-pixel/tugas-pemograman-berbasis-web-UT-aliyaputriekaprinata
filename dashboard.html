@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Dashboard</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header><h1>Dashboard SITTA</h1></header>
+<nav><a href="dashboard.html">Dashboard</a><a href="tracking.html">Tracking</a><a href="stok.html">Stok Bahan Ajar</a><a href="login.html">Logout</a></nav>
+<main class="container">
+  <h2 id="greeting"></h2>
+  <section>
+    <h3>Menu Utama</h3>
+    <button onclick="location.href='stok.html'">Informasi Bahan Ajar</button>
+    <button onclick="location.href='tracking.html'">Tracking Pengiriman</button>
+    <button>Laporan Monitoring DO</button>
+    <button>Histori Transaksi</button>
+  </section>
+</main>
+<script src="js/script.js"></script>
+<script>document.getElementById('greeting').innerText = getGreeting();</script>
+</body>
+</html>

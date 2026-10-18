@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><title>Login SITTA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style> /* contoh internal CSS */ .login-box {max-width:400px; margin:50px auto;} </style>
+</head>
+<body>
+<header><h1>SITTA - UT</h1></header>
+<main class="container login-box">
+  <h2>Login</h2>
+  <form id="loginForm">
+    <label>Email</label><br>
+    <input type="email" id="email" required style="width:100%; padding:8px;"><br><br> <!-- contoh inline -->
+    <label>Password</label><br>
+    <input type="password" id="password" required style="width:100%; padding:8px;"><br><br>
+    <button type="submit">Login</button>
+  </form>
+  <p><a href="#" onclick="openModal('modalLupa')">Lupa Password?</a> | <a href="#" onclick="openModal('modalDaftar')">Daftar</a></p>
+</main>
+
+<div id="modalLupa" class="modal"><div class="modal-content"><h3>Lupa Password</h3><p>Hubungi admin UT di admin@ut.ac.id</p><button onclick="closeModal('modalLupa')">Tutup</button></div></div>
+<div id="modalDaftar" class="modal"><div class="modal-content"><h3>Daftar Akun Baru</h3><p>Fitur pendaftaran masih dalam pengembangan.</p><button onclick="closeModal('modalDaftar')">Tutup</button></div></div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

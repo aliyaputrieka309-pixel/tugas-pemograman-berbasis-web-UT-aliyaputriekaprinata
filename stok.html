@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Stok</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header><h1>Informasi Stok Bahan Ajar</h1></header>
+<nav><a href="dashboard.html">Dashboard</a><a href="tracking.html">Tracking</a><a href="stok.html">Stok</a></nav>
+<main class="container">
+  <h2>Data Stok</h2>
+  <table id="tabelStok"><thead><tr><th>Kode</th><th>Judul</th><th>Stok</th><th>Gudang</th></tr></thead><tbody></tbody></table>
+  <h3 style="margin-top:20px;">Tambah Stok Baru</h3>
+  <input id="kode" placeholder="Kode"><input id="judul" placeholder="Judul"><input id="stok" type="number" placeholder="Stok"><input id="gudang" placeholder="Gudang"><button onclick="tambahStok()">Tambah</button>
+</main>
+<script src="js/data.js"></script><script src="js/script.js"></script>
+</body>
+</html>
